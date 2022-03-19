@@ -1,0 +1,321 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    position: relative;
+}
+@keyframes show {
+    0%{
+        opacity: 0;
+        
+    }
+    100%{
+        opacity: 100;
+    }
+    
+}
+@keyframes show1 {
+    0%{
+        opacity: 100;
+        
+    }
+    99%{
+        opacity: 0;
+        transform: scale(1);
+
+    }
+    100%{
+        transform: scale(0);
+
+    }
+    
+}
+
+
+    
+}
+body{
+    background-color: #fcfdff;
+    height: 100vh;
+        
+
+}
+.project{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    font-family: YekanBakhBold;
+    font-size: 5rem;
+    background: linear-gradient(to right, #c02425, #f0cb35);
+    opacity: 0;
+    animation: show1 1.5s  linear  1  forwards ;
+}
+.all{
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    animation: show 500ms  linear 1.5s  forwards;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 96px);
+    position: relative;
+    
+    
+}
+.logo{
+    display: flex;
+    margin-bottom: 35px;
+    position: relative;
+
+}
+.logo img{
+    height: 37px;
+    transition: all 200ms ease;
+}
+.logo img:hover{
+    transform: scale(1.4);
+}
+
+.center{
+
+    width: 350px;
+    height: 382px;
+    background-color: #ffffff;
+    border-radius: .25rem;
+    padding: 25px 10px;
+    box-sizing: border-box;
+    box-shadow: 0 0 60px rgba(40, 125, 190, 0.16);
+}
+#username , #password{
+        border-color: transparent;
+        font-family: YekanBakhMedium;
+        word-spacing: 3px;
+        width: calc(300px - 2rem);
+        font-size: .9rem;
+        text-align: left;
+
+}
+
+.username-all , .password-all{
+    height: 40px;
+    width: 310px;
+    box-shadow: 0 0 20px rgba(40, 125, 190, 0.16);
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: .25rem;
+
+}
+.username-all  i, .password-all i{
+margin-left: 5px;
+font-size: .8rem;
+padding: 3px;
+}
+ .password-all{
+    margin-top: 20px;
+}
+#username:focus , #password:focus{
+    outline: none;
+}
+#username::placeholder , #password::placeholder{
+color: #002f4946;
+text-align: right;
+
+}
+.form-login label{
+    border-left: 1px solid #002f4946;
+    margin-left: 5px;
+    display: flex;
+    justify-content: center;
+    height: 25px;
+}
+label ,p{
+    user-select: none;
+}
+.header-style{
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+}
+.header-style i{
+    margin-left: 5px;
+}
+.header-style p{
+font-family: YekanBakhHeavy;
+}
+.form-login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.submit{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px auto ;
+    background-color: #2679dc;
+    width: 310px;
+    color: #ffffff;
+    border-radius: .25rem;
+    border-color: transparent;
+    text-align: center;
+    transition: all 200ms ease;
+    
+}
+.submit:hover{
+    background-color: #1f69c4;
+
+}
+.submit button{
+    background-color: transparent;
+    border-color: transparent;
+    color: #ffffff;
+    font-family: YekanBakhMedium;
+    margin-left: 7px;
+
+}
+.submit i{
+    font-size: .8rem;
+}
+.linebreak{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    color: #002f49a2;
+    position: relative;
+
+
+}
+.hr{
+    font-family: iranyekanwebmedium;
+    font-size: .7rem;
+    text-align: center;
+    background-color: rgb(255, 251, 251);
+    position: relative;
+    width: 80px;
+    padding: 2px;
+    border-radius: .25rem;
+    z-index: 100;
+    user-select: none;
+
+}
+hr{
+    display: flex;
+    height: .2px;
+    width: 300px;
+    position: absolute;
+    top: 10px;
+    background-color: rgb(255, 251, 251);
+
+}
+.other{
+    display: flex; 
+    justify-content: center;
+    
+}
+.other button{
+    width: 150px;
+    background-color: transparent;
+    height: 45px;
+    font-family: YekanBakhMedium;
+    border-color: transparent;
+
+}
+.register ,.forget{
+    border: 1px solid ;
+    border-radius: .25rem;
+    margin: 1px;
+    transition: all 300ms ease;
+
+    
+}
+.register{
+    border-color: #999;
+}
+.register button{
+    color: #999;
+    transition: all 300ms ease;
+
+}
+.register button:hover ,.forget button:hover{
+    color: #ffffff;
+    
+}
+.register:hover{
+    background-color: #999;
+}
+.forget{
+    border-color: #dc3545;
+
+}
+.forget button{
+    color: #dc3545;
+    transition: all 300ms ease;
+
+}
+.forget:hover{
+    background-color: #dc3545;
+}
+footer{
+    height: 96px;
+    width: 100vw;
+    background: #0d4b9c url(../image/footer-back.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+article{
+    width: 1140px;
+    height: 76px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a{
+    text-decoration: none;
+    color: #fff;
+    font-family: iranyekanwebregular;
+    margin-left: 5px;
+    border-left: 1px solid #fff;
+    padding: 0 8px;
+    font-size: .8rem;
+    font-weight: lighter;
+
+}
+nav a:last-child{
+    border: none;
+}
+.soical{
+    display: flex;
+    justify-content: start;
+}
+.soical i{
+    color: #fff;
+    font-size: 1.5rem;
+    margin: auto 14px 14px;
+}
+.left-sec{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.left-sec p{
+    color: hsla(0,0%,100%,.6);
+    direction: ltr;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: .7rem;
+}
+.left-sec p>a{
+    color: #fff;
+    text-decoration: none;
+}
