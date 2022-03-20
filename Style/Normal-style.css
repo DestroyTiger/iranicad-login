@@ -328,7 +328,7 @@ nav a:last-child{
     color: #fff;
     text-decoration: none;
 }
-@media(max-width : 388px){
+@media(max-width : 480px){
     article{
         width: 100vw;
         height: 200px;
@@ -344,6 +344,7 @@ nav a:last-child{
         
     }
     footer{
+        width: 100vw;
         height: 240px;
         background-size:contain , cover ;
         background-repeat: no-repeat;
